@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcyan;
+}
+
+.screenContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.playerSide , .computerSide{
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.playerSide, .computerSide {
+    border: 5px solid white;
+}
+
+
+.playerName, .computerName {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+
+}
+
+#playerChoice, #computerChoice {
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playBtn {
+    font-size: 34px;
+    font-weight: bold;
+    background-color: lightblue;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 25px 150px;
+    margin: 100px;
+}
+
+#result {
+    text-align: center;
+    margin: 20px;
+}
+
