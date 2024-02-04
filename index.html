@@ -6,20 +6,32 @@
         <title>Rock Paper Scissor Game!</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body> 
+        <div class="nav-container">
+            <button class="clear-btn" onclick="ResetScore()">Clear Score</button>
+        </div>
         <h1 id="result"></h1>
         <div class="screenContainer">
             <div class="playerSide">
-                <h1 class="playerName">Player Choice</h1>
+                <div class="text-container">
+                    <h1 class="playerName">Player Choice</h1>
+                    <h1 id="player-score">0</h1>
+                </div>
                 <h1 id="playerChoice"></h1>
             </div>
             <div class="computerSide">
-                <h1 class="computerName">Computer Choice</h1>
+                <div class="text-container">
+                    <h1 class="computerName">Computer Choice</h1>
+                    <h1 id="computer-score">0</h1>
+                </div>
                 <h1 id="computerChoice"></h1>
             </div>
         </div> 
-       
-        <button id="playBtn" onclick="playRound()">Play</button>
+        <div class="btn-container"> 
+            <button class="rockBtn" alt>Rock</button>
+            <button class="paperBtn">Paper</button>
+            <button class="scissorBtn">Scissor</button>
+        </div>
         <script src="./script.js"></script>
     </body>
 </html>
