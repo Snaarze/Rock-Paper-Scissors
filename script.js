@@ -11,7 +11,7 @@ button.addEventListener('click', (e) =>{
      })
    
 })
-
+//  this function reset the score and the value of InnerText
 function ResetScore(){
     playerScore = 0;
     computerScore = 0;
@@ -19,7 +19,7 @@ function ResetScore(){
     document.getElementById('computer-score').innerHTML = `${computerScore}`;
 }
 
-
+// this function Randomized Choices for computer
 function getComputerChoice(){
     let randomNumber = Math.random() * 3
     let ComputerChoice = "";
@@ -34,7 +34,7 @@ function getComputerChoice(){
     return ComputerChoice;
 }
 
-
+// compares playerChoices and computerChoices
 function playRound(playerChoice){
 
 
@@ -79,7 +79,7 @@ function playRound(playerChoice){
             result = "Tie";
         }
     };
-
+    // if selection is true will update the innerText
     if(playerSelection === "rock" || playerSelection === "paper" || playerSelection === "scissor"){
         document.getElementById("playerChoice").innerHTML = `${playerSelection}`;
         document.getElementById("computerChoice").innerHTML = `${computerChoice}`;
